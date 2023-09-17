@@ -1,0 +1,497 @@
+---
+import { Icon } from "astro-icon";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "/uses";
+---
+
+<BaseLayout>
+    <section>
+        <h1>{pageTitle}</h1>
+
+        <h2 class="section-title">
+            I use and abuse the following killer tools & technologies:
+        </h2>
+
+        <ul class="icon__list">
+            <li>
+                <a href="https://www.apple.com/" target="_blank">
+                    <Icon name="simple-icons:apple" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/en-us/windows"
+                    target="_blank">
+                    <Icon name="simple-icons:windows" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/" target="_blank">
+                    <Icon name="simple-icons:figma" />
+                </a>
+            </li>
+            <li>
+                <a href="https://html.spec.whatwg.org/" target="_blank">
+                    <Icon name="simple-icons:html5" />
+                </a>
+            </li>
+            <li>
+                <a href="https://drafts.csswg.org/" target="_blank">
+                    <Icon name="simple-icons:css3" />
+                </a>
+            </li>
+            <li>
+                <a href="https://angular.io/" target="_blank">
+                    <Icon name="simple-icons:angular" />
+                </a>
+            </li>
+            <li>
+                <a href="https://nodejs.org/en" target="_blank">
+                    <Icon name="simple-icons:nodedotjs" />
+                </a>
+            </li>
+            <li>
+                <a href="https://code.visualstudio.com/" target="_blank">
+                    <Icon name="simple-icons:visualstudiocode" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.docker.com/" target="_blank">
+                    <Icon name="simple-icons:docker" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.postman.com/" target="_blank">
+                    <Icon name="simple-icons:postman" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gitkraken.com/" target="_blank">
+                    <Icon name="simple-icons:gitkraken" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/"
+                    target="_blank">
+                    <Icon name="simple-icons:firefoxbrowser" />
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            Inspired by <a href="https://wesbos.com/uses" target="_blank">
+                Wes Bos' /uses page
+            </a> and <a href="https://uses.tech/" target="_blank">
+                uses.tech
+            </a>. This page is a living document detailing everything I use on a daily basis for coding, productivity, photography, and gaming.
+        </p>
+
+        <div class="uses__list">
+            <!-- Hardware section -->
+            <div class="uses__list-section">
+                <h3>Computer and OS</h3>
+
+                <p>
+                    As long as I am working as a software engineer, a laptop
+                    will continue to be an important part of my daily gear,
+                    whether working on side projects or for work. As with all of
+                    my other devices, I prefer to carry a smaller laptop to help
+                    keep my daily carry as lightweight as possible.
+                </p>
+                <p>
+                    While I absolutely love macOS, and Apple gear in general, I
+                    have been a Windows geek since the Windows 3.1x days in the
+                    early 90s. While I have owned a couple of MacBook Pros in
+                    recent years, I eventually find myself wandering back to the
+                    world of Windows for some reason or another.
+                </p>
+                <p>
+                    <strong>Dell XPS 13 Plus</strong> (I really love the
+                    touchscreen!):
+                    <ul>
+                        <li>
+                            11th Gen Intel Core i7 3.0 GHz CPU
+                        </li>
+                        <li>
+                            16GB RAM
+                        </li>
+                        <li>
+                            Intel Iris Xe graphics
+                        </li>
+                        <li>
+                            2TB SSD
+                        </li>
+                        <li>
+                            Windows 11 Pro. <em>
+                                Any IT Nerd and Windows geek worth their salt knows the Pro versions of Windows
+                                are the only way to go.
+                            </em>
+                        </li>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Windows PowerToys</strong> - my daily Windows
+                    workflow relies heavily on the following killer PowerToys:
+                    <ul>
+                        <li>
+                            Awake
+                        </li>
+                        <li>
+                            FancyZones
+                        </li>
+                        <li>
+                            File Explorer add-ons
+                        </li>
+                        <li>
+                            Paste As Plain Text
+                        </li>
+                        <li>
+                            Peek
+                        </li>
+                        <li>
+                            PowerRename
+                        </li>
+                        <li>
+                            PowerToys Run
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Sysinternals Suite</strong>, for those times when I
+                    need a more sophisticated tool for troubleshooting various
+                    system or network issues.
+                </p>
+                <p>
+                    <strong>Keychron K2</strong> 75% (84-key) mechanical
+                    keyboard with Gateron G Pro Brown switches
+                </p>
+                <p>
+                    <strong>Logitech MX Master 2S</strong> mouse
+                </p>
+            </div>
+
+            <!-- Coding setup section -->
+            <div class="uses__list-section">
+                <h3>Coding setup</h3>
+
+                <p>
+                    <strong>WSL2, with Ubuntu 20.04</strong>. The Windows
+                    Subsystem for Linux has been a game-changer for me as a web
+                    developer working on Windows. All of my development tools
+                    either live in WSL, or connect to my WSL instance.
+                </p>
+                <p>
+                    <strong>Visual Studio Code</strong> with:
+                    <ul>
+                        <li>
+                            <strong>Dracula</strong> Theme
+                        </li>
+                        <li>
+                            <strong>FiraCode Nerd Font</strong>, with ligatures
+                            enabled.
+                        </li>
+                    </ul>
+
+                    <strong>GitLens</strong>, by GitKraken. I use a ton of various extensions in my VS Code setup, but GitLens is one of the most useful I have installed. It supercharges Git in VS Code and is well worth installing for the commit graph functionality alone, which is basically like having GitKraken right insde VS Code.
+                </p>
+                <p>
+                    <strong>GitKraken</strong> is, hands-down, the best Git
+                    client available. Even though I mostly work with Git in VS
+                    Code, there are times when I need to spend extra time with
+                    Git, and that's when I fire up GitKraken; although, the
+                    GitLens plugin is making this less necessary over time.
+                </p>
+                <p>
+                    <strong>Windows Terminal</strong>. When I need an external terminal (which is rare these days since I can get a full terminal experience with VS Code's
+                    built-in terminal), I use the excellent Windows Terminal. I currently have it configured with:
+                    <ul>
+                        <li>
+                            <strong>Dracula</strong> color theme
+                        </li>
+                        <li>
+                            <strong>FiraCode Nerd Font</strong>
+                        </li>
+                        <li>
+                            <strong>oh-my-zsh</strong> with <strong>
+                                PowerLevel10k
+                            </strong>
+                            <ul>
+                                <li>
+                                    <strong>exa</strong>, a better version of ls
+                                </li>
+                                <li>
+                                    <strong>bat</strong>, a better version of
+                                    cat, with syntax highlighting
+                                </li>
+                                <li>
+                                    ...and many other great command line tools
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    Most of the time, I actually just use VS Code's integrated
+                    terminal, but Windows Terminal is really awesome for the
+                    rare times I want/need an external terminal.
+                </p>
+                <p>
+                    <strong>Postman</strong> for testing REST and Graph APIs
+                </p>
+                <p>
+                    <strong>Docker</strong>, I use the official Docker plugin
+                    for VS Code.
+                </p>
+                <p>
+                    <strong>Figma</strong> for creating designs, wireframes, and
+                    prototypes. Moving forward, I plan to spend a significant
+                    amount of time learning how to create and build design
+                    systems using Figma, Storybook, and React.
+                </p>
+            </div>
+
+            <!-- Mobile gear section -->
+            <div class="uses__list-section">
+                <h3>Mobile gear</h3>
+
+                <p>
+                    <strong>iPhone 13 Pro Max 512GB</strong>, and I have no
+                    intentions of upgrading to a newer model anytime soon.
+                </p>
+                <p>
+                    <strong>iPad Pro 10.5” 256GB</strong> with the first
+                    generation <strong>Apple Pencil</strong>
+                </p>
+                <p>
+                    <strong>Apple Watch Series 8</strong>
+                </p>
+            </div>
+
+            <!-- Gaming gear section -->
+            <div class="uses__list-section">
+                <h3>Gaming gear</h3>
+
+                <p>
+                    I got my first taste of video games in the very early 80s
+                    via the Atari 2600, and I've been a gamer ever since. In the
+                    mid 90s I discovered id Software's absolutely awesome
+                    Commander Keen: Invasion of the Voritcons side-scrolling
+                    masterpiece for the PC (<i>Fun fact: I still fire-up this
+                    game from time to time in DOSBox</i>). Then, in the late
+                    90s I was launched into the world of 3D gaming courtesy of
+                    Quake II and the original Half-Life. These days I am mostly
+                    a console gamer, although I do believe the time has come to
+                    add a gaming PC back to my arsenal very soon.
+                </p>
+                <p>
+                    <strong>Nintendo Switch</strong> for scratching the Nintendo
+                    itch. My favorite Nintendo IPs are Mario, Metroid, Donkey
+                    Kong, and Zelda.
+                </p>
+                <p>
+                    <strong>PlayStation 4</strong> that is still going strong.
+                    I've been a PlayStation gamer since the original PlayStation
+                    was unleashed on the world in the late 90s.
+                </p>
+            </div>
+
+            <!-- Media consumption section -->
+            <div class="uses__list-section">
+                <h3>Media consumption</h3>
+
+                <p>
+                    I can't go through a single day without listening to music
+                    of some kind. While my tastes in genre are extremely varied
+                    and eclectic, I prefer to use gear that provides a good
+                    balance between high listening quality and convenience, but
+                    is also built to last.
+                </p>
+                <p>
+                    <strong>Beats Fit Pro</strong> for listening to spatial
+                    audio-enhanced music and as a headset for my iPhone. I tried
+                    the AirPods Pro, but a nagging, constant buzzing sound in
+                    each earbud forced me to look for something else. I'm glad I
+                    gave the Beats a try!
+                </p>
+                <p>
+                    <strong>Bose QC35 II</strong> wireless headphones for when I
+                    am sitting at my desk during long coding sessions, and for
+                    watching movies and YouTube videos. I plan to purchase
+                    <strong>Dolby Atmos for Headphones</strong> soon for an
+                    enhanced audio experience while using the Bose headphones
+                    with my laptop.
+                </p>
+                <p>
+                    <strong>Apple TV 4K</strong>
+                </p>
+                <p>
+                    <strong>Apple Music</strong> provides access to all the
+                    tunes I could ever want.
+                </p>
+                <p>
+                    I use <strong>YouTube</strong>, <strong>AppleTV+</strong>,
+                    <strong>Netflix</strong>, <strong>Max</strong>, and <strong>
+                    Disney+</strong> for those times when I want to kick back
+                    with a cold beer or cocktail, relax, and take in a flick or
+                    watch The Primeagen's latest takes on software engineering.
+                </p>
+            </div>
+
+            <!-- Productivity section -->
+            <div class="uses__list-section">
+                <h3>Productivity</h3>
+
+                <p>
+                    <strong>Microsoft Office 365</strong>, including <strong>1TB
+                    OneDrive</strong> storage. The apps I mainly use here are
+                    Excel and Word
+                </p>
+                <p>
+                    <strong>Notion</strong>. This is where my second brain
+                    lives, including my daily journal
+                </p>
+                <p>
+                    <strong>Firefox</strong> for daily web browsing; <strong>
+                    Firefox Developer Edition</strong> and <strong>Chrome
+                    </strong> for debugging UI code
+                </p>
+                <p>
+                    <strong>Notability</strong> for handwritten digital notes. I
+                    primarily use this for tracking project tasks and
+                    brainstorming. A lot of these notes eventually get expanded
+                    on and added to my second brain.
+                </p>
+                <p>
+                    <strong>Gmail</strong> (web app) for email.
+                </p>
+            </div>
+
+            <!-- Photography section -->
+            <div class="uses__list-section">
+                <h3>Photography</h3>
+
+                <p>
+                    After years of shooting with a Nikon DSLR, I finally had the
+                    opportunity to overhaul my shooting gear to the much
+                    lighter, yet just as capable, Olympus Micro 4/3 mirrorless
+                    system. In addition, I have overhauled my editing workflow
+                    to be iPad-centric, with Apple Photos handling library
+                    management and Apple iCloud handling photo storage. I'm also
+                    in the process of dumping my reliance on the Adobe
+                    ecosystem, which has been a long time coming.
+                </p>
+
+                <p>
+                    <strong>Olympus OM-D E-M5</strong> Micro 4/3 mirrorless body
+                    with <strong>Olympus HLD-8</strong> external battery grip
+                </p>
+                <p>
+                    <strong>Olympus M.Zuiko 12-40mm f/2.8 PRO</strong> lens
+                </p>
+                <p>
+                    <strong>Olympus M.Zuiko 40-150mm f/2.8 PRO</strong> lens
+                </p>
+                <p>
+                    <strong>SanDisk Extreme Pro</strong> SD cards
+                </p>
+                <p>
+                    <strong>Apple iCloud</strong> for storage
+                </p>
+                <p>
+                    <strong>Apple Photos</strong> for library management
+                </p>
+                <p>
+                    <strong>Darkroom+</strong> on iOS for editing and finishing
+                    images.
+                </p>
+            </div>
+
+            <!-- Blog setup section -->
+            <div class="uses__list-section">
+                <h3>Blog setup</h3>
+
+                <p>
+                    For now, my blog setup is pretty barebones and based on a
+                    from-scratch install of Eleventy. I will customize it as my
+                    needs evolve. Those who are super curious can scope the repo
+                    on GitHub and see how I've built and structured things
+                </p>
+                <p>
+                    <strong>Astro</strong>
+                </p>
+                <p>
+                    <strong>CSS</strong> (no preprocessors).
+                </p>
+                <p>
+                    <strong>Webmentions</strong> for commenting and site linking
+                </p>
+                <p>
+                    <strong>GitHub</strong> for code management and <strong>
+                    Netlify</strong> for hosting
+                </p>
+            </div>
+
+            <!-- Task log setup -->
+            <div class="uses__list-section">
+                <h3>Daily task log</h3>
+
+                <p>
+                    I prefer to rely on good ol’ pen and paper for daily task
+                    lists and quick thought/idea capture.</p>
+                <p>
+                    <strong>Lochby Pocket Journal canvas cover</strong> holding
+                    a <strong>Moleskine Cahier 3.5” x 5.5” dot-grid notebook
+                    </strong>
+                </p>
+                <p>
+                    <strong>Uni-Ball Vision Elite Stick Micro Point Rollerball
+                    pen</strong>
+                </p>
+                <p>
+                    <strong>
+                        Pentel GraphGear 500 0.7mm mechanical pencil
+                    </strong> for when I want to quickly sketch ideas or work
+                    through math problems
+                </p>
+                <p>
+                    A trio of colored <strong>Sharpie pens</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    [astro-icon] {
+        height: 36px;
+        width: 36px;
+    }
+
+    .icon__list {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0 1rem;
+    }
+
+    .icon__list li {
+        margin-bottom: 2.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .icon__list li a { color: #49297e; }
+
+    .uses__list-section {
+        border-top: 2px dashed #b6bcbf;
+        margin-bottom: 2rem;
+    }
+
+    .uses__list-section:first-child { border: none; }
+
+    h3 {
+        color: #e10086;
+        font-size: 1.5rem;
+    }
+
+    ul { padding-left: 3rem; }
+</style>

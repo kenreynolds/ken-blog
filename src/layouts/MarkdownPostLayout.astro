@@ -1,0 +1,32 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+    <article>
+        <h1>{frontmatter.title}</h1>
+
+        <p class="post-details">
+            Written by <span class="post-author">
+                {frontmatter.author}</span> on <span class="post-date">
+                    {frontmatter.pubDate.slice(0, 10)}
+            </span>
+        </p>
+
+        <slot />
+    </article>
+</BaseLayout>
+
+<style>
+    .post-author,
+    .post-date {
+        font-weight: bold;
+        margin-left: .25rem;
+    }
+
+    .post-author { margin-right: .25rem; }
+
+    .post-details { display: flex; }
+</style>

@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import selfieSmall from "../images/selfie-small.jpg";
+---
+
+<div class="hero">
+    <Image src={selfieSmall} alt="Ken" />
+
+    <div class="greeting">
+        <h1>Howdy, I'm Ken!</h1>
+        <p>
+            I'm a geek and self-proclaimed "JavaScript Junkie", living in the Dallas/Fort Worth Metroplex, who loves
+            photography, video games, and storm chasing.
+        </p>
+    </div>
+</div>
+
+<style>
+    .greeting {
+        font-family: $sans-font;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .greeting h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .greeting p {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+    }
+
+    .hero {
+        align-items: flex-start;
+        display: flex;
+        padding: 4rem 0 2rem 0;
+        width: 100%;
+    }
+
+    .hero img {
+        border-radius: 50%;
+        height: 125px;
+        margin-right: 1rem;
+        width: 125px;
+    }
+</style>

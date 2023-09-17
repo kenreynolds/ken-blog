@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const pageTitle = "Posts";
+---
+
+<BaseLayout>
+    <h1>{pageTitle}</h1>
+
+    <div class="posts__wrapper">
+        {allPosts.map(post => <BlogPost
+            url={post.url}
+            title={post.frontmatter.title}
+            date={post.frontmatter.pubDate.slice(0, 10)}
+            description={post.frontmatter.description}
+        />)}
+    </div>
+</BaseLayout>
+
+<style>
+    .posts__wrapper { padding-bottom: 24px; }
+</style>
