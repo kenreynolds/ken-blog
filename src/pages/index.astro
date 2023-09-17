@@ -2,12 +2,10 @@
 import { Icon } from "astro-icon";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import BlogPost from "../components/BlogPost.astro";
 import Hero from "../components/Hero.astro";
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
 const recentPosts = allPosts.slice(0, 3);
-const pageTitle = "Home";
 ---
 
 <BaseLayout>
@@ -19,36 +17,45 @@ const pageTitle = "Home";
 
             <div class="cards__wrapper">
                 <div class="card">
-                    <div class="card__header">
-                        <Icon name="simple-icons:instagram" />
-                        <h3>Instagram</h3>
-                        <p>- Photos</p>
-                    </div>
-                    <div class="card__content">
-                        <p>@kennethreynolds78</p>
-                    </div>
+                    <a href="https://www.instagram.com/kennethreynolds78/"
+                        target="_blank">
+                        <div class="card__header">
+                            <Icon name="simple-icons:instagram" />
+                            <h3>Instagram</h3>
+                            <p>- Photos</p>
+                        </div>
+                        <div class="card__content">
+                            <p>@kennethreynolds78</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card">
-                    <div class="card__header">
-                        <Icon name="simple-icons:linkedin" />
-                        <h3>LinkedIn</h3>
-                        <p>- Professional profile</p>
-                    </div>
-                    <div class="card__content">
-                        <p>/in/kenreynolds2009</p>
-                    </div>
+                    <a href="https://www.linkedin.com/in/kenreynolds2009/"
+                        target="_blank">
+                        <div class="card__header">
+                            <Icon name="simple-icons:linkedin" />
+                            <h3>LinkedIn</h3>
+                            <p>- Professional profile</p>
+                        </div>
+                        <div class="card__content">
+                            <p>/in/kenreynolds2009</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card">
-                    <div class="card__header">
-                        <Icon name="simple-icons:github" />
-                        <h3>GitHub</h3>
-                        <p>- Code stuff</p>
-                    </div>
-                    <div class="card__content">
-                        <p>/kenreynolds</p>
-                    </div>
+                    <a href="https://github.com/kenreynolds"
+                        target="_blank">
+                        <div class="card__header">
+                            <Icon name="simple-icons:github" />
+                            <h3>GitHub</h3>
+                            <p>- Code stuff</p>
+                        </div>
+                        <div class="card__content">
+                            <p>/kenreynolds</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -79,6 +86,11 @@ const pageTitle = "Home";
         height: 24px;
         margin-right: .5rem;
         width: 24px;
+    }
+
+    .card a {
+        color: #363d40;
+        text-decoration: none;
     }
 
     .cards__wrapper {
@@ -140,7 +152,12 @@ const pageTitle = "Home";
         padding: 1rem;
     }
 
-    .card--lg .card__item { margin-bottom: 1.5rem; }
+    .card--lg .card__item {
+        border-bottom: 1px dashed #363d40;
+        margin-bottom: 1.5rem;
+    }
+
+    .card--lg .card__item:last-child { border: none; }
 
     .card--lg .card__item p { padding: 0; }
 
