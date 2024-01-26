@@ -5,28 +5,18 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout>
-    <article>
-        <h1>{frontmatter.title}</h1>
+  <article class="text-neutral/80 mx-auto py-24 px-0 w-3/4">
+    <h1 class="font-semibold text-3xl m-0 px-0 pb-2 pt-0">
+      {frontmatter.title}
+    </h1>
 
-        <p class="post-details">
-            Written by <span class="post-author">
-                {frontmatter.author}</span> on <span class="post-date">
-                    {frontmatter.pubDate.slice(0, 10)}
-            </span>
-        </p>
+    <p class="flex mb-8">
+        Written by <span class="font-bold mx-1">
+          {frontmatter.author}</span> on <span class="font-bold ml-1">
+            {frontmatter.pubDate.slice(0, 10)}
+        </span>
+    </p>
 
-        <slot />
-    </article>
+    <slot />
+  </article>
 </BaseLayout>
-
-<style>
-    .post-author,
-    .post-date {
-        font-weight: bold;
-        margin-left: .25rem;
-    }
-
-    .post-author { margin-right: .25rem; }
-
-    .post-details { display: flex; }
-</style>

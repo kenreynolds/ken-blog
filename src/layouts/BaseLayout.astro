@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.scss";
 ---
 
-<html lang="en">
+<html lang="en" data-theme="emerald">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,11 +12,13 @@ import "../styles/global.scss";
 		<meta name="generator" content={Astro.generator} />
 		<title>Ken's Blog</title>
 	</head>
-	<body>
+	<body class="bg-base-100 text-neutral m-0 p-0">
 		<Header />
 
-        <main>
-            <slot />
-        </main>
+    <main class="box-border mx-auto overflow-x-hidden w-full">
+      <slot />
+    </main>
+
+    <Footer />
 	</body>
 </html>

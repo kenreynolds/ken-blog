@@ -1,34 +1,20 @@
 ---
+import { Icon } from "astro-icon";
+
 const { date, description, title, url } = Astro.props;
 ---
 
-<div class="blog__post-item">
-    <a href={url} class="blog__post-link">
-        {title}
-    </a> posted on <span class="blog__excerpt-date">{date}</span>
+<div class="border-dashed border-b-2 border-primary/45 text-neutral/80 px-0 py-4 first:pt-0 last:border-0">
+  <span class="font-semibold text-2xl">
+    {title}
+  </span> posted on <span class="font-semibold">{date}</span>
 
-    <p>{description}</p>
+  <p class="my-4">{description}</p>
+  <div class="flex justify-end mr-4 mt-4">
+    <a class="text-accent" href={url}>
+      <div class="flex items-center hover:underline hover:underline-offset-2">
+        Read more <Icon class="h-6 w-6 pt-0.5" name="pixelarticons:chevron-right" />
+      </div>
+    </a>
+  </div>
 </div>
-
-<style>
-    .blog__post-link,
-    .blog__excerpt-date { color: #49297e; }
-
-    .blog__post-item {
-        border-bottom: dashed 2px #49297e;
-        list-style: none;
-        padding: 1rem 0;
-    }
-
-    .blog__post-item:first-child { padding-top: 0; }
-
-    .blog__post-item:last-child { border: none; }
-
-    .blog__post-item h1 { display: none; }
-
-    .blog__post-link {
-        font-size: 1.75rem;
-        font-weight: bold;
-        text-decoration: none;
-    }
-</style>

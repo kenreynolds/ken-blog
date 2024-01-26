@@ -2,39 +2,11 @@
 import Navigation from "../components/Navigation.astro";
 ---
 
-<div class="header__bar">
-    <header>
-        <a href="/" class="site-title">ken.</a>
-        <Navigation />
-    </header>
+<div class="navbar bg-primary p-0">
+  <header class="flex justify-between text-base-100 mx-auto px-8 h-20 w-full xl:w-3/4">
+    <div class="flex items-center h-full">
+      <a href="/" class="font-bold text-5xl no-underline p-4">ken.</a>
+    </div>
+    <Navigation />
+  </header>
 </div>
-
-<style>
-    .header__bar {
-        background-color: #363d40;
-        padding: 0.5rem 0 1rem 0;
-        width: 100%;
-    }
-
-    .site-title {
-        color: inherit;
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-    }
-
-    header {
-        align-items: baseline;
-        color: #00db96;
-        display: flex;
-        font-family:  -apple-system, BlinkMacSystemFont, avenir next, avenir,
-            segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
-            noto, arial, sans-serif;
-        justify-content: space-between;
-        margin: 0 auto;
-        width: 1200px;
-    }
-</style>

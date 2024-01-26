@@ -1,34 +1,19 @@
-<nav>
-    <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/uses">/uses</a></li>
-    </ul>
+<nav class="flex items-end h-20 w-80">
+  <ul class="flex items-center list-none lowercase h-full w-full">
+    <li class="p-6 hover:bg-[#0082ad]">
+      <a class="flex items-center justify-center text-2xl no-underline pb-0 active:font-bold" href="/about">
+        About
+      </a>
+    </li>
+    <li class="p-6 hover:bg-[#0082ad]">
+      <a class="flex items-center justify-center text-2xl no-underline pb-0 active:font-bold" href="/blog">
+        Blog
+      </a>
+    </li>
+    <li class="p-6 hover:bg-[#0082ad]">
+      <a class="flex items-center justify-center text-2xl no-underline pb-0 active:font-bold" href="/uses">
+        /uses
+      </a>
+    </li>
+  </ul>
 </nav>
-
-<style>
-    nav ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    nav ul li {
-        list-style: none;
-        text-transform: lowercase;
-    }
-
-    nav ul li a {
-        align-items: center;
-        color: inherit;
-        display: flex;
-        font-size: 1.5rem;
-        justify-content: center;
-        padding-left: 3rem;
-        padding-bottom: 0;
-        text-decoration: none;
-    }
-
-    nav ul li a:active { font-weight: bold; }
-
-    nav ul li a:hover { text-decoration: underline; }
-</style>

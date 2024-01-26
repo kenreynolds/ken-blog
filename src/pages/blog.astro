@@ -7,18 +7,18 @@ const pageTitle = "Posts";
 ---
 
 <BaseLayout>
-    <h1>{pageTitle}</h1>
+  <section class="text-gray-200 mx-auto py-24 px-0 w-3/4">
+    <h1 class="text-primary text-3xl m-0 mb-8 px-0 pb-2 pt-0">
+      {pageTitle}
+    </h1>
 
-    <div class="posts__wrapper">
-        {allPosts.map(post => <BlogPost
-            url={post.url}
-            title={post.frontmatter.title}
-            date={post.frontmatter.pubDate.slice(0, 10)}
-            description={post.frontmatter.description}
-        />)}
+    <div class="pb-6">
+      {allPosts.map(post => <BlogPost
+        url={post.url}
+        title={post.frontmatter.title}
+        date={post.frontmatter.pubDate.slice(0, 10)}
+        description={post.frontmatter.description}
+      />)}
     </div>
+  </section>
 </BaseLayout>
-
-<style>
-    .posts__wrapper { padding-bottom: 24px; }
-</style>
