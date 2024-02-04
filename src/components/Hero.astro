@@ -3,15 +3,17 @@ import { Image } from "astro:assets";
 import selfieSmall from "../images/selfie-small.jpg";
 ---
 
-<div class="flex items-center mx-auto pb-12 px-8 pt-24 xl:w-3/4 xl:px-0">
+<div class="flex items-start mx-auto pb-12 px-8 pt-24 xl:w-3/4 xl:px-0">
   <Image
-    class="rounded-full mr-4 h-32 w-32"
+    class="rounded-full mr-4 h-28 w-28"
     src={selfieSmall}
     alt="Ken"
   />
 
   <div class="text-neutral leading-normal m-0 px-4 py-0">
-    <h1 class="bg-secondary/75 rounded font-semibold text-base-100 text-3xl m-0 pl-3 py-2 w-1/2">
+    <h1 class="bg-secondary/75 rounded font-semibold text-base-100 text-3xl
+      m-0 pl-3 py-2 w-64
+    ">
       Howdy, I'm Ken!
     </h1>
 

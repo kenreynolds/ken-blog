@@ -3,12 +3,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Social from "../components/Social.astro";
 import LatestPosts from "../components/LatestPosts.astro";
+import TagList from "../components/TagList.astro";
 ---
 
 <BaseLayout>
   <div class="w-full">
     <Hero />
     <!-- <Social /> -->
-    <LatestPosts />
+    <div class="flex flex-col mx-auto px-8 w-full
+      md:flex-row xl:px-0 xl:w-3/4
+    ">
+      <LatestPosts class="w-3/4" />
+      <TagList class="w-1/4" />
+    </div>
   </div>
 </BaseLayout>
