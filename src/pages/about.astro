@@ -6,32 +6,35 @@ const pageTitle = "About Ken";
 ---
 
 <BaseLayout>
-  <section class="text-neutral/80 mx-auto py-24 px-0 w-3/4">
+  <section class="text-neutral/80 mx-auto pb-12 pt-24 px-0 w-3/4">
     <h1 class="text-primary text-3xl m-0 mb-8 px-0 pb-2 pt-0">
       {pageTitle}
     </h1>
 
     <p class="mb-4">
       My name is Ken Reynolds and I'm a senior software engineer working at American Airlines in Fort Worth, TX. I'm
-      married to the love of my life and we have a wonderful daughter. I am fueled by strong black coffee (preferably
-      Dunkin Donuts Original Blend or Death Wish medium roast), Pepsi (it's the choice of a new generation!), and pizza,
-      and I fully believe the thinking doesn't happen until the coffee drinking happens.
+      married to the love of my life and we have a wonderful daughter who is just beginning her journey into adulthood.
+      I am fueled by strong black coffee (preferably Dunkin Donuts Original Blend or Death Wish medium roast), Pepsi
+      (it's the choice of a new generation!), and Neapolitan pizza, and I fully believe the thinking doesn't happen
+      until the coffee drinking happens.
     </p>
     <p class="mb-4">
       My daily job duties include building a brand new internal admin app from scratch using Angular 14+ with NgRx for
       UI state management, as well as helping implement strong coding standards, and migrating to a DevOps workflow and
       culture. I totally dig building full-stack JavaScript web apps using Node, Express, and MongoDB on the backend,
-      and various frontend frameworks (my current favorites are Angular, React, and Vue). While I love hacking on side
+      and various frontend frameworks (my current favorites are Angular, Next.js, and Vue). While I love hacking on side
       projects, I take continuous learning very seriously. To that end, I am currently teaching myself algorithms and
       data structures, and expanding my knowledge of DevOps beyond the basics.
     </p>
     <p class="mb-4">
-      When I'm not banging out code for work or side projects, I can be found exploring and photographing urban areas
-      around me, playing video games, chasing interesting weather events, partaking in amateur radio (callsign KF5WJC),
-      and spending time with my wife and daughter. In short, I work hard, but I play hard, too.
+      When I'm not banging out code for work or side projects, I can be found watching movies with my sweetheart,
+      exploring and shooting video of urban areas around me, playing video games, chasing interesting weather events,
+      playing amateur radio (callsign KF5WJC), or indulging in killer local craft beer and strong whiskey. In short, I
+      work hard, but I play hard, too.
     </p>
     <p class="mb-4">
-      If you're interested, you can check out my various social media profiles:
+      If you're interested, you can check out my various social media profiles, listed below, or learn about my hobbies
+      in the following sections.
 
       <ul class="mt-8">
         <li class="flex items-center mb-4">
@@ -60,5 +63,39 @@ const pageTitle = "About Ken";
         </li>
       </ul>
     </p>
+  </section>
+
+  <section class="text-neutral/80 mx-auto pb-24 px-0 w-3/4">
+    <h2 class="text-primary text-2xl m-0 mb-4 px-0 pb-2 pt-0">Hobbies</h2>
+
+    <div class="collapse collapse-arrow bg-base-200 my-4">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-arrow bg-base-200 my-4">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-arrow bg-base-200 my-4">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
   </section>
 </BaseLayout>
