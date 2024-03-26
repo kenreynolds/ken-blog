@@ -7,7 +7,7 @@ const pageTitle = "About Ken";
 
 <BaseLayout>
   <section class="text-neutral/80 mx-auto pb-12 pt-24 px-0 w-3/4">
-    <h1 class="text-primary text-3xl m-0 mb-8 px-0 pb-2 pt-0">
+    <h1 id="pagestart" class="text-primary text-3xl m-0 mb-8 px-0 pb-2 pt-0">
       {pageTitle}
     </h1>
 
@@ -35,6 +35,30 @@ const pageTitle = "About Ken";
     <p class="mb-4">
       If you're interested, you can check out my various social media profiles, listed below, or learn about my hobbies
       in the following sections.
+
+      <ul>
+        <li class="mb-2">
+          <a
+            class="text-accent no-underline ml-1 hover:underline hover:underline-offset-2"
+            href="#hamradio">
+            Ham radio
+          </a>
+        </li>
+        <li class="mb-2">
+          <a
+            class="text-accent no-underline ml-1 hover:underline hover:underline-offset-2"
+            href="#stormchasing">
+            Storm chasing
+          </a>
+        </li>
+        <li class="mb-2">
+          <a
+            class="text-accent no-underline ml-1 hover:underline hover:underline-offset-2"
+            href="#videogames">
+            Video games
+          </a>
+        </li>
+      </ul>
 
       <ul class="mt-8">
         <li class="flex items-center mb-4">
@@ -68,33 +92,99 @@ const pageTitle = "About Ken";
   <section class="text-neutral/80 mx-auto pb-24 px-0 w-3/4">
     <h2 class="text-primary text-2xl m-0 mb-4 px-0 pb-2 pt-0">Hobbies</h2>
 
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+    <!-- Ham radio -->
+    <div id="hamradio" class="collapse collapse-arrow bg-base-200 my-4">
       <input type="radio" name="my-accordion-2" checked="checked" />
       <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
+        Ham radio
       </div>
       <div class="collapse-content">
-        <p>hello</p>
+        <h3 class="flex items-center justify-between text-base font-bold mb-2">
+          Introduction <a class="text-accent font-normal ml-4 hover:underline hover:underline-offset-2" href="#pagestart">Back to top</a>
+        </h3>
+        <p class="mb-4">
+          My interest in ham radio began when I was a kid in Boy Scouts after reading about the magic of amateur radio in a Boy's Life article. That initial interest died for a while, but was reignited when my lifelong interest in storm chasing was born, late in high school. Several years later, my interest in ham radio would be strongly encouraged by my late friend Brent, but it would be quite a few years before I finally capitalized on my interest. I finally tested for and acquired my Technician class license in July 2013 and received my call sign, KF5WJC. Then, a few years later I upgraded to a General class license.
+        </p>
+
+        <h3 class="text-base font-bold mb-2">Mansfield-Johnson Amateur Radio Service (MJARS)</h3>
+        <p class="mb-4">
+          Shortly after acquiring my General class license I joined the <a
+            class="text-accent hover:underline hover:underline-offset-2"
+            href="https://www.mjars.org/"
+            target="_blank"
+          >Mansfield-Johnson Amateur Radio Club (MJARS)</a> and immediately began to learn more about the art of radio than I ever thought I would. With MJARS, I have learned much about tactical radio operations, including how to power a portable radio station indefinitely via off-grid power solutions. I have also contributed to many events across the area, including the Mansfield Pickle Parade and Palooza, the Burleson Honey Tour, Head for the Hills bike rally in Cedar Hill, and the Waco Triathlon. Of all my activities with MJARS, the one I'm most proud of is helping with SKYWARN spotter operations in support of the City of Mansfield Emergency Management. My volunteer duties as a SKYWARN spotter with MJARS includes car-based field operations, post-storm damage assessments, and serving as net control from within the Mansfield Emergency Operations Center. I plan to continue my involvement with MJARS for as long as I am living in this area.
+        </p>
+
+        <h3 class="text-base font-bold mb-2">My interests within amateur radio</h3>
+        <p class="mb-4">
+          There are many aspects of the radio hobby to explore. I've chosen to focus on those aspects that directly relate to emergency and tactical communications. As such, I am deeply interested in the following areas of ham radio:
+          <ul class="mb-4 pl-8 list-disc">
+            <li>Building, setting up, and maintaining analog repeaters</li>
+            <li>Fox hunting</li>
+            <li>APRS, for tracking and off-grid messaging, and packet radio in general</li>
+            <li>Winlink email, for sending email via RF</li>
+          </ul>
+          <p class="mb-4">
+            In addition to the above, I enjoy hunting DX (long distance) contacts on VHF simplex during killer sporadic-e outbreaks. I have also recently begun to experiment with DMR (digital mode radio), just for fun (can't be serious all the time!) using a DMR HT and digital radio hotspot.
+          </p>
+        </p>
+
+        <h3 class="text-base font-bold mb-2">My current radio gear</h3>
+        <h4 class="text-base font-semibold mb-2">Home base station</h4>
+        <p class="mb-4">
+          This station allows me to communicate with anyone, pretty much anywhere within the greater D/FW Metroplex, via RF FM voice on VHF and UHF frequencies.
+        </p>
+        <ul class="mb-4 pl-8 list-disc">
+          <li><span class="underline">AnyTone AT-5888UV III</span> tri-band (144 MHz/220 MHz/440 MHz) transceiver</li>
+          <li><span class="underline">MFJ 4230MVP</span> 30 Amp switching power supply with Anderson PowerPoles</li>
+          <li><span class="underline">Comet CX-333</span> tri-band fiberglass vertical, connected to the transceiver with ~120ft. LMR-400 coax</li>
+        </ul>
+
+        <h4 class="text-base font-semibold mb-2">Mobile station</h4>
+        <p class="mb-4">
+          This station is installed in my 2020 Jeep Renegade Sport 4x4 and allows me to communicate via analog VHF and UHF frequencies while I am driving. The transceiver is a killer piece of kit, as it not only has a built-in GPS for tracking, but also an internal TNC for full APRS and packet radio capability, and a digipeater.
+        </p>
+        <ul class="mb-4 pl-8 list-disc">
+          <li><span class="underline">Kenwood TM-D710G</span> dual-band (144 MHz/440 MHz) transceiver (discontinued)</li>
+          <li>Dual-band mag mount antenna (to be upgraded to a permanently-mounted antenna once I finally get an adventure rack installed on my Jeep)</li>
+        </ul>
+
+        <h4 class="text-base font-semibold mb-2">HT (handheld) radios and accessories</h4>
+        <p class="mb-4">
+          I have a variety of handheld VHF/UHF radios, but listed below are the radios I use on a regular basis.
+        </p>
+        <ul class="mb-4 pl-8 list-disc">
+          <li><span class="underline">Yaesu VX-6R</span> tri-band (144 MHz/220 MHz/440 MHz). This is my primary EDC radio due to it's minimal weight and rugged construction. I can connect it to my Moblinkd TNC4 in order to pair with my iPhone or iPad Pro, via Bluetooth, for highly portable, on-the-go APRS messaging and WinLink email activity using the APRS.fi and RadioMail apps.</li>
+          <li><span class="underline">Kenwood TH-D72A</span> dual-band (144/440), which mirrors the capabilities of the Kenwood TM-D710G.</li>
+          <li><span class="underline">AnyTone AT-D878UV</span> dual-band (144/440) DMR. I bought this handheld in Summer 2021 in preparation for my first time volunteering to help with the Waco Triathlon. I regularly swap this radio in as my EDC radio due to its superior battery life, and because I have a large number of ham and GMRS repeaters, and DMR channels setup in the radio's memory. I sometimes pair it with an openSPOT4 Pro when I want to explore the world of DMR via a digital radio hotspot.</li>
+          <li><span class="underline">Yaesu FT-60R</span> dual-band (144/440). This was my workhorse radio for many years, but after adding newer radios to my kit this radio has become my fox hunting powerhouse. I couple this HT with the Arrow Antennas FHL-UHF Fox Hunt Loop with the Arrow Antennas 4 MHz Offset Attenuator whenever I am participating in fox hunts.</li>
+        </ul>
       </div>
     </div>
 
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+    <!-- Storm chasing -->
+    <div id="stormchasing" class="collapse collapse-arrow bg-base-200 my-4">
       <input type="radio" name="my-accordion-2" />
       <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
+        Storm chasing
       </div>
       <div class="collapse-content">
-        <p>hello</p>
+        <h3 class="flex items-center justify-between text-base font-bold mb-2">
+          Introduction <a class="text-accent font-normal ml-4 hover:underline hover:underline-offset-2" href="#pagestart">Back to top</a>
+        </h3>
       </div>
     </div>
 
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+    <!-- Video games -->
+    <div id="videogames" class="collapse collapse-arrow bg-base-200 my-4">
       <input type="radio" name="my-accordion-2" />
       <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
+        Video games
       </div>
       <div class="collapse-content">
-        <p>hello</p>
+        <h3 class="flex items-center justify-between text-base font-bold mb-2">
+          Introduction <a class="text-accent font-normal ml-4 hover:underline hover:underline-offset-2" href="#pagestart">Back to top</a>
+        </h3>
       </div>
     </div>
   </section>
